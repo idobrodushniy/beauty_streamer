@@ -11,8 +11,8 @@ class BeautyMainComponent extends Component {
     }
 
     onClickToFilter = (event) => {
-        if(this.state.keywords.length < 1){
-            return ;
+        if (this.state.keywords.length < 1) {
+            return;
         }
         var client = amazon.createClient({
             awsId: "AKIAJ4HL7C5FSZSHJZ4A",
@@ -46,7 +46,8 @@ class BeautyMainComponent extends Component {
                             <div className="left-pane--items">
                                 {this.props.filtered_items.map(
                                     (el) => (
-                                        <AmazonItem addNewItemToCart={this.props.addNewItemToCart} item={el} key={el.ASIN[0]}/>
+                                        <AmazonItem addNewItemToCart={this.props.addNewItemToCart} item={el}
+                                                    key={el.ASIN[0]}/>
                                     )
                                 )}
                             </div>

@@ -9,5 +9,5 @@ const rootReducer = combineReducers({
 })
 const history = createBrowserHistory();
 const connectedReducer = connectRouter(history)(rootReducer);
-const store = createStore(connectedReducer, compose(applyMiddleware(thunk), window.devToolsExtension? window.devToolsExtension(): f => f));
+const store = createStore(connectedReducer, compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : f => f));
 export default store;

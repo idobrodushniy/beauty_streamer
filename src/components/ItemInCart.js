@@ -1,11 +1,11 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 
 export default class ItemInCart extends Component {
     render() {
-        return(
+        return (
             <div className="item--in-cart">
                 <div className="amazon-item--image-block">
-                    <img src={this.props.item.url} alt="No image"/>
+                    <img src={this.props.item.url} alt=""/>
                 </div>
                 <div className="amazon-item--item-content">
                     {this.props.item.group} <br/>
